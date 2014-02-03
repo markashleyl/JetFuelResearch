@@ -16,6 +16,30 @@
 
 /* #Site Styles
 ================================================== */
+.image {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	height: 30em;
+	background: url('images/sanfran.jpg') no-repeat
+	background-image: url(file:///C:/Users/Ashley/Documents/GitHub/JetFuelResearch/images/sanfran.jpg);
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: 100%;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-attachment: fixed;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	background-size: 100%;
+	background-attachment: fixed;
+}
 
 .navjet {
 	width: 100%;
