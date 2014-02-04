@@ -17,26 +17,13 @@
 /* #Site Styles
 ================================================== */
 .image {
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 15px;
+	width: 100%;
 	margin-bottom: 30px;
 	margin-top: 15px;
-	margin-right: auto;
-	margin-left: auto;
 	position: relative;
 	height: 30em;
-	background: url('images/sanfran.jpg') no-repeat
-	background-image: url(file:///C:/Users/Ashley/Documents/GitHub/JetFuelResearch/images/sanfran.jpg);
-	background-position-x: initial;
-	background-position-y: initial;
-	background-size: 100%;
-	background-repeat-x: no-repeat;
-	background-repeat-y: no-repeat;
-	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-color: initial;
+	background-image: url(../images/sanfran.jpg);
+	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
 }
@@ -77,10 +64,11 @@
 	background: -ms-linear-gradient(top, #ffffff 0%,#e6ecf3 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #ffffff 0%,#e6ecf3 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6ecf3',GradientType=0 ); /* IE6-9 */
-	copy
 }
 .fullwidth {
 	width: 100%;
+}
+.header {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	background: #0067b8; /* Old browsers */
@@ -92,7 +80,28 @@
 	background: linear-gradient(to bottom, #0067b8 50%,#004f99 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0067b8', endColorstr='#004f99',GradientType=0 ); /* IE6-9 */
 }
-
+.footer {
+	background: #383838; /* Old browsers */
+	background: -moz-linear-gradient(top, #383838 1%, #010105 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#383838), color-stop(100%,#010105)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #383838 1%,#010105 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #383838 1%,#010105 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #383838 1%,#010105 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #383838 1%,#010105 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#010105',GradientType=0 ); /* IE6-9 */
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+.footer li a{
+	color: white;
+}
+.footer h3 {
+	color: white;
+}
+.copy {
+	font-size: 12px;
+}
 /* #Page Styles
 ================================================== */
 
