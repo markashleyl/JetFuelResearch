@@ -58,6 +58,20 @@
 	background-attachment: fixed;
 	height: 40em;
 }
+.message-background {
+	margin-top:15em;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 5px;
+	border-radius:5px;
+	opacity:0.6;
+	background-color:#ffffff;
+	box-shadow: 10px 10px 5px #000000;
+}
+.message-bg-inner {
+	border: 2px solid black;
+	border-radius:5px;
+}
 .header {
 	margin-top: 20px;
 	margin-bottom: 20px;
