@@ -16,18 +16,6 @@
 
 /* #Site Styles
 ================================================== */
-.image {
-	width: 100%;
-	margin-bottom: 30px;
-	margin-top: 15px;
-	position: relative;
-	height: 30em;
-	background-image: url(../images/sanfran.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
 .navjet {
 	width: 100%;
 	text-align: center;
