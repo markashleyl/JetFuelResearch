@@ -63,7 +63,7 @@
 	background-position: top center;
 }
 .message-background {
-	margin-top:15em;
+	margin-top:12em;
 	margin-left:auto;
 	margin-right:auto;
 	padding: 5px;
@@ -75,6 +75,7 @@
 .message-bg-inner {
 	border: 2px solid black;
 	border-radius:5px;
+	text-align:center;
 }
 .header {
 	margin-top: 0;
