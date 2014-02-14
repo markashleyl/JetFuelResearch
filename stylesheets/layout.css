@@ -57,6 +57,7 @@
 	background-size: 100%;
 	background-attachment: fixed;
 	height: 40em;
+	background-position: top center;
 }
 .message-background {
 	margin-top:15em;
@@ -508,7 +509,10 @@ input.black[type="button"]:active {
 	}
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-    }
+		.main-message{
+			background-size: auto;
+		}
+	}
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
     }
