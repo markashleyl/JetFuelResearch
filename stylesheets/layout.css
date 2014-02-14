@@ -64,6 +64,12 @@
 .fullwidth {
 	width: 100%;
 }
+.main-message {
+	background: url(../images/main-message-bg.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 40em;
+}
 .header {
 	margin-top: 20px;
 	margin-bottom: 20px;
