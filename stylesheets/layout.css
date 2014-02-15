@@ -105,31 +105,6 @@
 .copy {
 	font-size: 12px;
 }
-.btn {
-	display: inline-block;
-	padding: 4px 12px;
-	margin-bottom: 0;
-	font-size: 14px;
-	line-height: 20px;
-	color: #ffffff;
-	text-align: center;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-	vertical-align: middle;
-	cursor: pointer;
-	background: #050505; /* Old browsers */
-	background: -moz-linear-gradient(top, #050505 0%, #a5a5a5 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#050505), color-stop(100%,#a5a5a5)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #050505 0%,#a5a5a5 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #050505 0%,#a5a5a5 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #050505 0%,#a5a5a5 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #050505 0%,#a5a5a5 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050505', endColorstr='#a5a5a5',GradientType=0 ); /* IE6-9 */
-
-}
-.btn:first-child {
-}
-button.btn{
-}
 #navjet-collapse {
 	display: none;
 }
