@@ -173,8 +173,7 @@
 	text-align:center;
 }
 .header {
-	margin-top: 0;
-	margin-bottom: 20px;
+	margin: 0; /*ff bug that puts header on the top as well so no header for the bottom on this one... use padding if you must*/
 	background: #0067b8; /* Old browsers */
 	background: -moz-linear-gradient(top, #0067b8 50%, #004f99 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#0067b8), color-stop(100%,#004f99)); /* Chrome,Safari4+ */
