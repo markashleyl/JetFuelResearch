@@ -47,6 +47,7 @@
 	color: #ffffff;
 	position: relative;
 	overflow: hidden;
+	padding-right: 10px;
 }
 .slidingSecondPhase {
 	background: #0067b8; /* Old browsers */
@@ -99,6 +100,7 @@
 	color: #ffffff;
 	position: relative;
 	overflow: hidden;
+	padding-left: 10px;
 }
 .slidingSecondPhase2 {
 	background: #0067b8; /* Old browsers */
