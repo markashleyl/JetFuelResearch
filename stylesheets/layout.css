@@ -134,6 +134,21 @@
 	vertical-align: middle;
 	padding: 10px -1px 10px 0px;
 }
+.slidermobile {
+	display: none;
+}
+.slidingBoxContainerMobile {
+	display: none;
+}
+.slidingSecondPhaseMobile {
+	display: none;
+}
+.slidingBoxContainer2Mobile {
+	display: none;
+}
+.slidingSecondPhase2Mobile {
+	display: none;
+}
 .eighteen.columns img {
 	width: 25px;
 	height: 25px;
@@ -314,6 +329,25 @@
 			display: block;
 			text-decoration: none;
 		}
+		.slidingBoxContainer {
+			display: none;
+		}
+		.slidingSecondPhase {
+			display: none;
+		}
+		.slidingBoxContainer2 {
+			display: none;
+		}
+		.slidingSecondPhase2 {
+			display: none;
+		}
+		.slidermobile {
+			height: 50px;
+			border-bottom: 1px solid #383838;
+			padding-top: 11px;
+			padding-left: 10px;
+			display: block;
+		}
 		.slidingBoxContainerMobile {
 			width: 80%;
 			height: 157px;
@@ -331,7 +365,7 @@
 			color: #ffffff;
 			position: relative;
 			overflow: hidden;
-			display: none;
+			display: block;
 		}
 		.slidingSecondPhaseMobile {
 			background: #0067b8; /* Old browsers */
@@ -365,12 +399,11 @@
 			padding: 10px;
 			display: block;
 			display: table-cell;
-			display: block;
 		}
 		.slidingSecondPhaseMobile a.slidingBoxImageMobile img {
 			width: 100%;
 		}
-		.slidingBoxContainer2 {
+		.slidingBoxContainer2Mobile {
 			width: 80%;
 			height: 157px;
 			margin-top: 20px;
@@ -387,9 +420,9 @@
 			color: #ffffff;
 			position: relative;
 			overflow: hidden;
-			display: none;
+			display: block;
 		}
-		.slidingSecondPhase2 {
+		.slidingSecondPhase2Mobile {
 			background: #0067b8; /* Old browsers */
 			background: -moz-linear-gradient(top, #0067b8 0%, #265874 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0067b8), color-stop(100%,#265874)); /* Chrome,Safari4+ */
@@ -407,20 +440,18 @@
 			display: table;
 			display: block;
 		}
-		.slidingSecondPhase2 a.slidingBoxImage2 {
+		.slidingSecondPhase2Mobile a.slidingBoxImage2Mobile {
 			width: 150px;
 			height: 150px;
 			position: relative;
 			padding: 10px;
 			display: block;
 			display: table-cell;
-			display: block;
 		}
-		.slidingSecondPhase2 a.slidingBoxImage2 img {
+		.slidingSecondPhase2Mobile a.slidingBoxImage2Mobile img {
 			width: 100%;
-			display: block;
 		}
-		.slidingSecondPhase2 > p {
+		.slidingSecondPhase2Mobile > p {
 			display: table-cell;
 			color: #ffffff;
 			vertical-align: middle;
