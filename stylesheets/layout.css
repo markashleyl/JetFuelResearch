@@ -151,7 +151,7 @@
 .slidingSecondPhase2Mobile {
 	display: none;
 }
-.eighteen.columns img {
+.eighteencolumns img {
 	width: 25px;
 	height: 25px;
 	border-radius: 5px;
@@ -343,17 +343,13 @@
 		.slidingSecondPhase2 {
 			display: none;
 		}
-		.slidermobile {
-			padding-top: 11px;
-			padding-left: 10px;
-			display: block;
-		}
 		.slidingBoxContainerMobile {
-			width: 95%;
-			height: 157px;
+			width: 98%;
+			height: 315px;
 			margin-top: 20px;
 			margin-right: 10%;
 			margin-left: 10%;
+			padding-left: 1px;
 			background: #0067b8; /* Old browsers */
 			background: -moz-linear-gradient(top, #0067b8 0%, #265874 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0067b8), color-stop(100%,#265874)); /* Chrome,Safari4+ */
@@ -366,6 +362,7 @@
 			position: relative;
 			overflow: hidden;
 			display: block;
+			font-size: 20px;
 		}
 		.slidingBoxContainerMobile a {
 			text-decoration: none;
@@ -399,6 +396,7 @@
 			vertical-align: middle;
 			padding: 10px -1px 10px 0px;
 			display: block;
+			font-size: 15px;
 		}
 		.slidingSecondPhaseMobile a.slidingBoxImageMobile {
 			width: 150px;
@@ -409,11 +407,12 @@
 			display: table-cell;
 		}
 		.slidingBoxContainer2Mobile {
-			width: 95%;
-			height: 157px;
+			width: 98%;
+			height: 315px;
 			margin-top: 20px;
 			margin-right: 10%;
 			margin-left: 10%;
+			padding-left: 1px;
 			background: #0067b8; /* Old browsers */
 			background: -moz-linear-gradient(top, #0067b8 0%, #265874 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0067b8), color-stop(100%,#265874)); /* Chrome,Safari4+ */
@@ -426,7 +425,7 @@
 			position: relative;
 			overflow: hidden;
 			display: block;
-			text-decoration: none;
+			font-size: 20px;
 		}
 		.slidingSecondPhase2Mobile {
 			background: #0067b8; /* Old browsers */

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Jet Fuel Research</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+	/* prepend menu icon */
+	
+	/* toggle nav */
+	$("#navjet-collapse .navjet-mini").on("click", function(){
+		$("#navjet-collapse .navjet-collapseSecondPhase").slideToggle();
+		$(this).toggleClass("active");
+	});
+});
+</script>
+<script src="js/jquery-2.1.0.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$(".slidingBoxImage").click(function(event) {
+			event.preventDefault();
+			if ($(this).hasClass("active")) {
+				$(this).removeClass("active");
+			  	$(this).parent().animate({
+			    	marginLeft: "-150px",
+			    	left: "100%",
+			  	}, 1000, function() {
+			    // Animation complete.
+			  	});
+
+			}else{
+
+				$(this).addClass("active");
+			  	$(this).parent().animate({
+			    	marginLeft: 0,
+			    	left: 0,
+			  	}, 1000, function() {
+			    // Animation complete.
+			  	});
+			}
+		});
+		$(".slidingBoxImage2").click(function(event) {
+			event.preventDefault();
+			if ($(this).hasClass("active")) {
+				$(this).removeClass("active");
+			  	$(this).parent().animate({
+			    	marginRight: "-150px",
+			    	right: "100%",
+			  	}, 1000, function() {
+			    // Animation complete.
+			  	});
+
+			}else{
+
+				$(this).addClass("active");
+			  	$(this).parent().animate({
+			    	marginRight: 0,
+			    	right: 0,
+			  	}, 1000, function() {
+			    // Animation complete.
+			  	});
+			}
+		});
+		$(".slidingBoxContainerButton").click(function(event) {
+			event.preventDefault();
+			if ($(this).hasClass("active")) {
+				$(this).removeClass("active");
+				$(this).parents(".slidingBoxContainerMobile").find(".slidingSecondPhaseMobile").animate({
+					top: "100%",
+				}, 1000, function() {
+			});
+			}else{
+				$(this).addClass("active");
+				$(this).parents(".slidingBoxContainerMobile").find(".slidingSecondPhaseMobile").animate({
+					top: "0",
+				}, 1000, function() {
+					//
+				});
+			}
+		});
+		$(".slidingBoxContainerButton2").click(function(event) {
+			event.preventDefault();
+			if ($(this).hasClass("active")) {
+				$(this).removeClass("active");
+				$(this).parents(".slidingBoxContainer2Mobile").find(".slidingSecondPhase2Mobile").animate({
+					top: "100%",
+				}, 1000, function() {
+			});
+			}else{
+				$(this).addClass("active");
+				$(this).parents(".slidingBoxContainer2Mobile").find(".slidingSecondPhase2Mobile").animate({
+					top: "0",
+				}, 1000, function() {
+					//
+				});
+			}
+		});
+	});
+	</script>
+
+</head>
+<body>
+<div id="navjet-collapse" class="fullwidth">
+	<div class="navjet-mini header-gradient">
+		<a href="#">&#8801;</a>
+	</div>
+	<ul class="navjet-collapseSecondPhase">
+		<li class="header-gradient"><a href="index.html">Home</a></li>
+		<li class="header-gradient"><a href="about.html">About</a></li>
+		<li class="header-gradient"><a href="service.html">Service</a></li>
+		<li class="header-gradient"><a href="contact.html">Contact</a></li>
+	</ul>
+</div>
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<section class="fullwidth main-message">
+		<div class="company-branding">
+			<div class="container">
+				<div class="sixteen columns">
+					<h1 class="remove-bottom"><img src=images/Logo05.png>Jet Fuel Research LLC</h1>
+				</div>
+			</div>
+		</div>
+		<div class="fullwidth header">
+			<div class="container">
+				<div class="sixteen columns">
+					<ul class="navjet clearfix">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="service.html">Service</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="thirteen columns center">
+				<div class="message-background"><div class="message-bg-inner"><h2>Message that describes what we do and compels investors to find out more.</h2><div></div>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<div class="slidingBoxContainer">
+			<h2>Collecting Data</h2>
+			<div class="slidingSecondPhase">
+				<a href="#" class="slidingBoxImage"><img src="images/research.jpg" alt="Research" /></a>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+		<div class="slidingBoxContainer2">
+			<h2>Vetting Trade Participants</h2>
+			<div class="slidingSecondPhase2">
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<a href="#" class="slidingBoxImage2"><img src="images/research.jpg" alt="Research" /></a>
+			</div>
+		</div>
+		<div class="slidingBoxContainer">
+			<h2>Matching Trade Participants</h2>
+			<div class="slidingSecondPhase">
+				<a href="#" class="slidingBoxImage"><img src="images/research.jpg" alt="Research" /></a>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+			<div class="slidingBoxContainerMobile">
+				<h2><a class="slidingBoxContainerButton" href="#">Collecting Data</a></h2>
+				<div class="slidingSecondPhaseMobile">
+					<p class="slidingBoxContainerButton">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="slidingBoxContainer2Mobile">
+				<h2><a class="slidingBoxContainerButton2" href="#">Vetting Trade Participants</a></h2>
+				<div class="slidingSecondPhase2Mobile">
+					<p class="slidingBoxContainerButton2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="slidingBoxContainerMobile">
+				<h2><a class="slidingBoxContainerButton" href="#">Matching Trade Participants</a></h2>
+				<div class="slidingSecondPhaseMobile">
+					<p class="slidingBoxContainerButton">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+		<div class="eightcolumns">
+			<img src="images/man.jpg">
+			<h3>Success Story</h3>
+			<p>Skeleton is a small collection of well-organized CSS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. It's based on a responsive grid, but also provides very basic CSS for typography, buttons, forms and media queries. Go ahead, resize this super basic page to see the grid in action.</p>
+		</div>
+		<div class="eightcolumns">
+			<img src="images/woman.jpg">
+			<h3>Success Story</h3>
+			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
+		</div>
+		 	<div class="thirteen column">
+				<h3>Other Information</h3>
+					<p><a href="url">Market Prices of Oil</a> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+
+	</div><!-- container -->
+
+	<div class="fullwidth footer">
+		<div class="container">
+			<div class="sixteen columns">
+				<h3>Resources</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service.html">Service</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="sixteen columns">
+				<p class="copyright">Copyright 2014</p>
+			</div>
+		</div>
+	</div>
+	
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
