@@ -151,10 +151,11 @@
 .slidingSecondPhase2Mobile {
 	display: none;
 }
-.eighteencolumns img {
-	width: 25px;
-	height: 25px;
+.eightcolumns img {
+	width: 150px;
+	height: 150px;
 	border-radius: 5px;
+	text-align: center;
 }
 .navjet {
 	width: 100%;
@@ -248,7 +249,6 @@
 #navjet-collapse {
 	display: none;
 }
-
 
 
 /* #Page Styles
@@ -457,6 +457,13 @@
 			vertical-align: middle;
 			padding: 10px -1px 10px 0px;
 			display: block;
+			font-size: 15px;
+		}
+		.slidingBoxDrop {
+			display: block;
+		}
+		.thirteencolumns {
+			text-align: center;
 		}
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {

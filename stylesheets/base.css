@@ -30,7 +30,9 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline; }
+		vertical-align: baseline;
+		text-align: center;
+		 }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
@@ -73,8 +75,6 @@
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
-	.slidingBoxContainer2 h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; text-align: right; }
-	.slidingBoxContainer h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; text-align: left; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
 	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
 	h5 { font-size: 17px; line-height: 24px; }

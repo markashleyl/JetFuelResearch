@@ -45,10 +45,6 @@
 		$("#navjet-collapse .navjet-collapseSecondPhase").slideToggle();
 		$(this).toggleClass("active");
 	});
-	$(".slidingBoxContainerMobile .slidingBoxContainerMobile a").on("click", function(){
-		$(".slidingBoxContainerMobile .slidingSecondPhaseMobile").slideToggle();
-		$(this).toggleClass("active");
-	});
 });
 </script>
 <script src="js/jquery-2.1.0.min.js"></script>
@@ -98,8 +94,24 @@
 			  	});
 			}
 		});
+		$(".slidingBoxContainerButton").click(function(event) {
+			event.preventDefault();
+			if ($(this).hasClass("active")) {
+				$(this).removeClass("active");
+				$(this).parents(".slidingBoxContainerMobile").find(".slidingSecondPhaseMobile").animate({
+					top: "100%",
+				}, 1000, function() {
+			});
+			}else{
+				$(this).addClass("active");
+				$(this).parents(".slidingBoxContainerMobile").find(".slidingSecondPhaseMobile").animate({
+					top: "0",
+				}, 1000, function() {
+					//
+				});
+			}
+		});
 	});
-
 	</script>
 
 </head>
@@ -167,32 +179,30 @@
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
 		</div>
-		<div class="slidermobile">
 			<div class="slidingBoxContainerMobile">
-				<h2><a href="#">Collecting Data</a></h2>
+				<h2><a class="slidingBoxContainerButton" href="#">Collecting Data</a></h2>
 				<div class="slidingSecondPhaseMobile">
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>
 			</div>
 			<div class="slidingBoxContainer2Mobile">
-				<h2><a href="#">Vetting Trade Participants</a></h2>
+				<h2><a class="slidingBoxContainerButton" href="#">Vetting Trade Participants</a></h2>
 				<div class="slidingSecondPhase2Mobile">
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>
 			</div>
 			<div class="slidingBoxContainerMobile">
-				<h2><a href="#">Matching Trade Participants</a></h2>
+				<h2><a class="slidingBoxContainerButton" href="#">Matching Trade Participants</a></h2>
 				<div class="slidingSecondPhaseMobile">
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>
 			</div>
-		</div>
-		<div class="eight columns">
+		<div class="eightcolumns">
 			<img src="images/man.jpg">
 			<h3>Success Story</h3>
 			<p>Skeleton is a small collection of well-organized CSS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. It's based on a responsive grid, but also provides very basic CSS for typography, buttons, forms and media queries. Go ahead, resize this super basic page to see the grid in action.</p>
 		</div>
-		<div class="eight columns">
+		<div class="eightcolumns">
 			<img src="images/woman.jpg">
 			<h3>Success Story</h3>
 			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
